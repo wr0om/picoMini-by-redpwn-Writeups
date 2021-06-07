@@ -44,8 +44,8 @@ This boolean expression checks the login information:
 "YWRtaW4" !== t.u ? alert("Incorrect Username") : "cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ" !== t.p ? alert("Incorrect Password") : void alert(`Correct Password! Your flag is ${atob(t.p)}.`)
 ```
 
-The btoa function encodes values with base64, so let's turn them back (you can do it with a decoder online):
-* YWRtaW4 = admin
-* cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ = picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}
+The btoa function encodes values with base64, so let's turn them back (you can do it with an [online decoder](https://www.base64decode.org/)):
+* YWRtaW4 = base64(admin)
+* cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ = base64(picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r})
 
 That's it, this is the flag - picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}
